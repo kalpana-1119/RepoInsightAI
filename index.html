@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepoInsight AI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i data-lucide="github"></i>
+                </div>
+                <h1 class="logo-text">Repo<span>Insight</span> AI</h1>
+            </div>
+            <p class="subtitle">AI-Powered GitHub Repository Intelligence Platform</p>
+            <div class="divider"></div>
+        </header>
+
+        <main class="main-content">
+            <form id="analyze-form" class="search-form">
+                <div class="input-group">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="url" id="repo-url" placeholder="Enter GitHub Repository URL" required autocomplete="off">
+                </div>
+                <button type="submit" class="analyze-btn" id="analyze-btn">Analyze</button>
+            </form>
+            <div id="status-message" class="status-message"></div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
